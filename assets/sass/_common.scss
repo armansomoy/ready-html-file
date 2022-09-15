@@ -47,17 +47,3 @@ ol {
 
 
 
-
-/* Footer Style */
-.footer{
-
-	.copyright{
-		font-size: 0.8rem;
-		&__link{
-			&:hover,
-			&:focus{
-				text-decoration: underline #ddb180;
-			}
-		}
-	}
-}
