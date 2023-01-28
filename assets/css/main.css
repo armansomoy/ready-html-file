@@ -10,12 +10,7 @@
   scrollbar-width: thin; }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  background-color: aqua; }
-
-::-webkit-scrollbar-thumb {
-  width: 5px;
-  background-color: #2d77ff; }
+  width: 5px; }
 
 html,
 body {
@@ -41,4 +36,4 @@ ul,
 ol {
   list-style: none; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
