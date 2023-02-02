@@ -10,7 +10,12 @@
   scrollbar-width: thin; }
 
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 5px;
+  background-color: aqua; }
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #2d77ff; }
 
 html,
 body {

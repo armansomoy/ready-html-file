@@ -19,7 +19,8 @@
 
 html,
 body {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: aqua; }
 
 /* Change text & background color */
 a,
@@ -40,5 +41,12 @@ img {
 ul,
 ol {
   list-style: none; }
+
+#content-box {
+  padding: 30px;
+  background-color: #fff;
+  width: 1142px;
+  height: 1400px;
+  margin: 300px auto; }
 
 /*# sourceMappingURL=style.css.map */
