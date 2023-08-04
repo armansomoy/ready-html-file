@@ -10,11 +10,17 @@
   scrollbar-width: thin; }
 
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 5px;
+  background-color: aqua; }
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #2d77ff; }
 
 html,
 body {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: aqua; }
 
 /* Change text & background color */
 a,
@@ -35,5 +41,12 @@ img {
 ul,
 ol {
   list-style: none; }
+
+#content-box {
+  padding: 30px;
+  background-color: #fff;
+  width: 1142px;
+  height: 1400px;
+  margin: 300px auto; }
 
 /*# sourceMappingURL=main.css.map */
