@@ -3,6 +3,375 @@
     background-color: #fff;
     width: 1142px;
     height: 1400px;
-    
+
     margin: 300px auto;
+}
+
+
+.main-content {
+    padding: 30px;
+
+
+    h2 {
+        color: #b7ff00;
+        text-align: center;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 79.3px;
+        padding-bottom: 30px;
+    }
+
+    //     .card {
+    //         color: #fff;
+    //         padding: 15px;
+    //         border-radius: 10px;
+    //         border: 1px solid transparent;
+    //         @include transition(.3s);
+
+
+
+    //         p {
+    //             font-size: 18px;
+    //             line-height: 10px;
+    //         }
+
+    //         .upper-part {
+    //             padding: 10px 0px 15px;
+    //         }
+
+    //         .upper-part {
+    //             margin-bottom: 20px;
+    //             display: flex;
+    //             justify-content: space-between;
+    //             border-bottom: 1px solid #ffffffaf;
+
+    //             i {
+    //                 height: 60px;
+    //                 width: 60px;
+    //                 font-size: 20px;
+    //                 border-radius: 50%;
+    //                 line-height: 60px;
+    //                 text-align: center;
+
+    //                 background: rgba(255, 255, 255, 0.25);
+    //                 box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    //                 backdrop-filter: blur(4px);
+    //                 -webkit-backdrop-filter: blur(4px);
+    //                 border-radius: 10px;
+    //                 border: 1px solid rgba(255, 255, 255, 0.18);
+    //             }
+
+    //             h4 {
+    //                 font-size: 40px;
+    //                 padding-right: 20px;
+    //                 color: #fff;
+    //             }
+    //         }
+
+
+    //     }
+
+    //     .card.one {
+    //         background: rgb(116, 71, 248);
+    //         background: -moz-linear-gradient(93deg, rgba(116, 71, 248, 1) 0%, rgba(63, 108, 255, 1) 100%);
+    //         background: -webkit-linear-gradient(93deg, rgba(116, 71, 248, 1) 0%, rgba(63, 108, 255, 1) 100%);
+    //         background: linear-gradient(93deg, rgba(116, 71, 248, 1) 0%, rgba(63, 108, 255, 1) 100%);
+    //         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7447f8", endColorstr="#3f6cff", GradientType=1);
+    //         &:hover {
+    //             border: 1px solid #3f6cff;
+    //         }
+
+    //     }
+
+    //     .card.two {
+    //         background: rgb(251, 165, 160);
+    //         background: -moz-linear-gradient(93deg, rgba(251, 165, 160, 1) 0%, rgba(255, 39, 100, 1) 100%);
+    //         background: -webkit-linear-gradient(93deg, rgba(251, 165, 160, 1) 0%, rgba(255, 39, 100, 1) 100%);
+    //         background: linear-gradient(93deg, rgba(251, 165, 160, 1) 0%, rgba(255, 39, 100, 1) 100%);
+    //         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fba5a0", endColorstr="#ff2764", GradientType=1);
+    //         &:hover {
+    //             border: 1px solid #ff2764;
+    //         }
+    //     }
+
+    //     .card.three{
+    //         background: rgb(255,176,91);
+    // background: -moz-linear-gradient(93deg, rgba(255,176,91,1) 0%, rgba(255,96,15,1) 100%);
+    // background: -webkit-linear-gradient(93deg, rgba(255,176,91,1) 0%, rgba(255,96,15,1) 100%);
+    // background: linear-gradient(93deg, rgba(255,176,91,1) 0%, rgba(255,96,15,1) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb05b",endColorstr="#ff600f",GradientType=1);
+    //     }
+
+    .card {
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #000;
+
+        @include transition(.3s);
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(50deg, rgba(33, 231, 134, 0.30) 2.76%, rgba(5, 156, 0, 0.116) 61.46%, rgba(33, 231, 134, 0.00) 98.16%);
+        backdrop-filter: blur(200px);
+
+
+        &::after {
+            content: "";
+            background: url(https://bullchartai.top/images/why-card-5-image.png);
+            background-repeat: no-repeat;
+            background-position: 100% 10%;
+            position: absolute;
+            top: -90px;
+            right: -88px;
+            width: 297px;
+            height: 303px;
+            z-index: -1;
+        }
+
+
+        &:hover::after {
+            top: -58px;
+            right: -40px;
+            @include transition(.3s);
+        }
+
+        &:hover h4 {
+            color: #000;
+        }
+
+        &:hover {
+            border: 1px solid $brand-color;
+
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 10px;
+        }
+
+        .upper-part {
+            padding: 10px 0px 10px;
+        }
+
+        .upper-part {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                line-height: 50px;
+                text-align: center;
+                background: linear-gradient(50deg, rgba(61, 150, 2, 0.20) 2.76%, rgba(0, 0, 0, 0.00) 50.46%, rgba(79, 250, 0, 0.20) 98.16%);
+                backdrop-filter: blur(120px);
+
+            }
+
+            h4 {
+                font-size: 35px;
+                padding-right: 20px;
+                color: #fff;
+            }
+        }
+
+
+
+
+    }
+
+    .create-campaign-box {
+        margin: 30px;
+
+        h4 {
+            color: #b7ff00;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 79.3px;
+            padding: 30px 0px 20px;
+        }
+
+        .box {
+            background: linear-gradient(113deg, rgba(61, 150, 2, 0.20) 2.76%, rgba(0, 0, 0, 0.00) 50.46%, rgba(79, 250, 0, 0.20) 98.16%);
+            backdrop-filter: blur(120px);
+            padding: 50px 30px 30px;
+            border-radius: 10px;
+
+            input {
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid rgba(221, 255, 135, 0.432);
+                margin-bottom: 15px;
+                padding: 10px;
+                background-color: #000;
+                height: 50px;
+                color: #ffffffde;
+
+                &:focus {
+                    border: 1px solid rgba(221, 255, 135, 0.993);
+                }
+            }
+
+            p {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 50px;
+            }
+
+            .dropdown-toggle {
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid rgba(221, 255, 135, 0.432);
+                margin-bottom: 15px;
+                padding: 10px;
+                color: #ffffff79;
+                text-align: left;
+                background-color: #000;
+                height: 50px;
+            }
+
+            button {
+                padding: 10px 35px;
+                border-radius: 10px;
+                border: 1px solid rgba(221, 255, 135, 0.432);
+                background-color: $brand-color;
+                margin-bottom: 15px;
+                text-align: center;
+                font-weight: bold;
+                color: #000;
+                text-align: left;
+                @include transition(.3s);
+
+
+
+                &:hover {
+                    color: #fff;
+                    background-color: #000;
+                    border: 1px solid rgba(221, 255, 135, 0.432);
+                }
+            }
+        }
+    }
+
+
+}
+
+.profile-content {
+    padding: 30px;
+
+    h2 {
+        color: #b7ff00;
+        text-align: center;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 79.3px;
+        padding-bottom: 30px;
+    }
+
+    .intro {
+        h5 {
+            color: #999;
+            ;
+            font-size: 20px;
+
+            span {
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+
+        p {
+            color: #999;
+        }
+    }
+
+    .first {
+        padding-top: 30px;
+        display: flex;
+
+        h5 {
+            color: #fff;
+            padding-right: 20px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+
+        input {
+            width: 50%;
+            border-radius: 10px;
+            border: 1px solid rgba(221, 255, 135, 0.432);
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #000;
+            height: 50px;
+            color: #ffffffde;
+
+            &:focus {
+                border: 1px solid rgba(221, 255, 135, 0.993);
+            }
+        }
+
+        button {
+            padding: 10px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(221, 255, 135, 0.432);
+            background-color: $brand-color;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #000;
+            text-align: left;
+            @include transition(.3s);
+
+
+
+            &:hover {
+                color: #fff;
+                background-color: #000;
+                border: 1px solid rgba(221, 255, 135, 0.432);
+            }
+        }
+    }
+
+    .progres-bar {
+        padding: 50px 0px;
+
+        h5 {
+            padding-left: 15px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 100%;
+            // background-color: rgb(214, 207, 207);
+            height: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 2px;
+            border: 1px solid #2bff00;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #2bff00;
+            width: 0%;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+    }
+
+    h4 {
+        color: #b7ff00;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 79.3px;
+        padding: 30px 0px 20px;
+    }
+
 }
